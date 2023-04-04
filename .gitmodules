@@ -1,0 +1,18 @@
+[submodule "libs/noizu_labs_erp"]
+	path = libs/noizu_labs_erp
+	url = git@github.com:noizu-labs-scaffolding/erp.git
+[submodule "libs/noizu_labs_contexts"]
+	path = libs/noizu_labs_contexts
+	url = git@github.com:noizu-labs-scaffolding/contexts.git
+[submodule "libs/noizu_labs_entities"]
+	path = libs/noizu_labs_entities
+	url = git@github.com:noizu-labs-scaffolding/entities.git
+[submodule "libs/noizu_labs_services"]
+	path = libs/noizu_labs_services
+	url = git@github.com:noizu-labs-scaffolding/services.git
+[submodule "libs/noizu_labs_clusters"]
+	path = libs/noizu_labs_clusters
+	url = git@github.com:noizu-labs-scaffolding/clusters.git
+[submodule "libs/noizu_labs_testing"]
+	path = libs/noizu_labs_testing
+	url = git@github.com:noizu-labs-scaffolding/testing.git
