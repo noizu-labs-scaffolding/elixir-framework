@@ -1,2 +1,4 @@
-# elixir-framework
-Rollup of Elixir Scaffolding Tools
+# ElixirFramework
+
+**TODO: Add description**
+
