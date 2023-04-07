@@ -16,3 +16,6 @@
 [submodule "libs/noizu_labs_testing"]
 	path = libs/noizu_labs_testing
 	url = git@github.com:noizu-labs-scaffolding/testing.git
+[submodule "libs/elixir-openai"]
+	path = libs/elixir-openai
+	url = git@github.com:noizu-labs/elixir-openai.git

@@ -18,7 +18,8 @@ defmodule ElixirFramework.MixProject do
    :noizu_labs_entities,
    :noizu_labs_services,
    :noizu_labs_clusters,
-   :noizu_labs_testing
+   :noizu_labs_testing,
+   :noizu_openai
    ]
   end
 
