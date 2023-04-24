@@ -3,30 +3,25 @@ defmodule ElixirFramework.MixProject do
 
   def project do
     [
-      apps_path: "libs",
+      app: :noizu_framework,
+      apps_path: "apps",
       version: "0.1.0",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
-      apps: lib_apps() ++ demo_apps()
+      apps: lib_apps()
     ]
   end
 
   defp lib_apps() do 
    [
-   :noizu_labs_erp,
-   :noizu_labs_contexts,
-   :noizu_labs_entities,
-   :noizu_labs_services,
-   :noizu_labs_clusters,
-   :noizu_labs_testing,
-   :noizu_openai
+     :noizu_labs_open_ai,
+     :noizu_labs_contexts,
+     :noizu_labs_entities,
+     :noizu_labs_services,
+     :noizu_labs_clusters,
+     :noizu_labs_testing,
+     :noizu_labs_erp,
    ]
-  end
-
-  defp demo_apps() do 
-  [
-
-  ]
   end
 
   # Dependencies listed here are available only for this
