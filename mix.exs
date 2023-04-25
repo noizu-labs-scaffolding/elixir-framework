@@ -15,7 +15,7 @@ defmodule ElixirFramework.MixProject do
   defp lib_apps() do 
    [
      :noizu_labs_open_ai,
-     :noizu_labs_contexts,
+     :noizu_labs_context,
      :noizu_labs_entities,
      :noizu_labs_services,
      :noizu_labs_clusters,
