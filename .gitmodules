@@ -2,7 +2,7 @@
 	path = apps/noizu_labs_erp
 	url = git@github.com:noizu-labs-scaffolding/erp.git
 [submodule "libs/noizu_labs_contexts"]
-	path = apps/noizu_labs_contexts
+	path = apps/noizu_labs_context
 	url = git@github.com:noizu-labs-scaffolding/contexts.git
 [submodule "libs/noizu_labs_entities"]
 	path = apps/noizu_labs_entities
