@@ -19,3 +19,15 @@
 [submodule "libs/elixir-openai"]
 	path = apps/noizu_labs_open_ai
 	url = git@github.com:noizu-labs/elixir-openai.git
+[submodule "apps/entities/ecto_entities"]
+	path = apps/entities/ecto_entities
+	url = git@github.com:noizu-labs-scaffolding/ecto_entities.git
+[submodule "apps/entities/redis_entities"]
+	path = apps/entities/redis_entities
+	url = git@github.com:noizu-labs-scaffolding/redis_entities.git
+[submodule "apps/entities/amnesia_entities"]
+	path = apps/entities/amnesia_entities
+	url = git@github.com:noizu-labs-scaffolding/amnesia_entities.git
+[submodule "apps/entities/mnesia_entities"]
+	path = apps/entities/mnesia_entities
+	url = git@github.com:noizu-labs-scaffolding/mnesia_entities.git

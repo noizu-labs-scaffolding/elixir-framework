@@ -1,68 +1,15 @@
 defmodule Noizu.ConfigHelper do
-  @env_prefix_map_defaults %{
-    prod: "PROD",
-    stage: "STAGE",
-    dev: "DEV",
-    test: "TEST"
-  }
+  @moduledoc """
+      The Noizu.ConfigHelper exposes a config compile time dependency listed under deps/noizu_labs_config_helper/helper_lib
+  To u
 
-  def env_prefix_map() do
-    Application.get_env(:noizu_labs_config_helper, :env_prefix_map, @env_prefix_map_defaults)
-  end
+se this config helper update your paths as follows in your project mix.exs
 
-  def prefix(key, use_prefix) when use_prefix in [true, :auto] do
-    env_prefix_map()[Mix.env()] <> "_" <> key
-  end
-
-  def prefix(key, _) do
-    key
-  end
-
-  def env_as(key, as, env, default \\ nil, required \\ :required, use_prefix \\ :auto) do
-    key = prefix(key, use_prefix)
-    case System.get_env(key) do
-      nil ->
-        cond do
-          required in [true, :required] ->
-            raise("#{env.file}:#{env.line}  Config Error - User must set #{key}=[...] environment variable")
-          required == :silent -> :nop
-          :else ->
-            IO.puts("#{env.file}:#{env.line} Config Error - User should set #{key}=[...] environment variable")
-        end
-        default
-      v ->
-        case as do
-          :string -> v
-          d when d in [:list, :char_list] -> String.to_charlist(v)
-          type when type in [:bool, :flag] ->
-            cond do
-              v in [true, "true", "TRUE", "on", "ON", 1] -> true
-              v in [false, "false", "FALSE", "off", "OFF", 0] -> false
-            end
-          type when type in [:int, :integer] ->
-            String.to_integer(v)
-        end
-    end
-  end
-
-  defmacro env_setting(key, options \\ [default: false, required: true, as: :string, prefix: true]) do
-    default = options[:default]
-    required = cond do
-      options[:silent] -> :silent
-      options[:required] == false -> :optional
-      :else -> :required
-    end
-    prefix = case options[:prefix] do
-      :auto -> :auto
-      false -> false
-      true -> true
-      _ -> :auto
-    end
-    as = options[:as] || :string
-    quote do
-      Noizu.ConfigHelper.env_as(unquote(key), unquote(as), __ENV__, unquote(default), unquote(required), unquote(prefix))
-    end
-  end
+  ```
+  defp elixirc_paths(:test), do: ["lib", "deps/noizu_labs_config_helper/lib_test", "test/support"]
+  ```
 
 
+
+  """
 end
