@@ -17,5 +17,5 @@ import Config
 #       metadata: [:user_id]
 #
 
-config :noizu_labs_ecto_entities,
+config :noizu_labs_entities,
        umbrella: true
