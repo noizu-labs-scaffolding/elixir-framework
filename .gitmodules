@@ -26,5 +26,5 @@
 	path = apps/entities/mnesia_entities
 	url = git@github.com:noizu-labs-scaffolding/mnesia_entities.git
 [submodule "apps/core"]
-	path = apps/core
+	path = apps/noizu_labs_core
 	url = git@github.com:noizu-labs-scaffolding/core.git

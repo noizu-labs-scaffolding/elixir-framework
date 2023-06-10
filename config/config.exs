@@ -16,3 +16,6 @@ import Config
 #       format: "$date $time [$level] $metadata$message\n",
 #       metadata: [:user_id]
 #
+
+config :noizu_labs_ecto_entities,
+       umbrella: true
