@@ -28,3 +28,6 @@
 [submodule "apps/core"]
 	path = apps/noizu_labs_core
 	url = git@github.com:noizu-labs-scaffolding/core.git
+[submodule "apps/elixir-github"]
+	path = apps/elixir-github
+	url = git@github.com:noizu-labs/elixir-github.git
