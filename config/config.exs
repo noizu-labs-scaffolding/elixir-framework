@@ -14,7 +14,7 @@ import Config
 #     config :logger, :console,
 #       level: :info,
 #       format: "$date $time [$level] $metadata$message\n",
-#       metadata: [:user_id]
+#       metadata: [:user]
 #
 
 config :noizu_labs_entities,
