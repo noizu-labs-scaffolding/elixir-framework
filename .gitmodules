@@ -31,3 +31,6 @@
 [submodule "apps/elixir-github"]
 	path = apps/noizu_github
 	url = git@github.com:noizu-labs/elixir-github.git
+[submodule "apps/elixir-weaviate"]
+	path = apps/elixir-weaviate
+	url = git@github.com:noizu-labs/elixir-weaviate.git
